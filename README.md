@@ -1,6 +1,6 @@
 # ATIVIDADE CONTANDO INSTRUÇÕES
 
-Olá Michel! Para a execução do arquivo, basta realizar aqueles passos do MakeFile - Make clean, make, make run. Estava fazendo com a implantação do .hpp e .cpp, porém como estava com dúvidas em relação à alocação dinâmica para a matriz, já que o n é variável, e como não foi falado se seria necessário fazer de outra forma, acabei implantando tudo no main mesmo, espero que esteja válido (Obs: Para a próxima lista já irei desconsiderar fazer dessa forma).
+Olá Michel! Para a execução do arquivo, basta realizar aqueles passos do MakeFile - Make clean, make, make run. Estava fazendo com a implantação do .hpp e .cpp, porém como estava com dúvidas em relação à alocação dinâmica para a matriz, já que o n é variável, e como não foi falado se seria necessário fazer assi,, acabei implantando tudo no main mesmo, espero que esteja válido (Obs: Para a próxima lista já irei desconsiderar fazer dessa forma, visto que você orientou a organizar com .h e .c).
 
 Abaixo segue o Relatório com as repostas às perguntas.
 
@@ -37,6 +37,7 @@ Para chegar à função que determina o algoritmo como um todo, devemos consider
   <li>Percorre caminho: Condicionantes que variam o N em 2xN, como ele para em [n][n] será de 2N - 1.</li>
   <li>Somar matriz: N(linhas) x N(colunas) => N² é o custo visto que serão preenchidas nxn elementos.</li>
   </ul>
-  Com isso o custo computacional desse algoritmo seria 3N²  + 2N - 1.<br>
-  
+Com isso o custo computacional desse algoritmo seria 3N²  + 2N - 1.<br>
+Existem outras formas de se executar este programa, inclusive fazendo com um custo computacional mais baixo. Como por exemplo, realizar a soma dos elementos que compõem o caminho, ao fazer as condicionantes para decidir o caminho, com isso o número de instruções seria menor. Outro método que poderia ser utilizado diz respeito a classificar os elementos da matriz, ao criar os elementos aleatórios, dessa forma, fica possível utilizar esses índices para se saber qual seria o caminho adotado passando pelos maiores valores. São implementações mais complexas mas que poderiam ser utilizadas para melhorar a eficácia do algoritmo.<br>
+Não localizei um algoritmo específico para tal, porém, durante a pesquisei que realizei para saber se existia um algoritmo para resolver o problema proposto, notei que o Algoritmo de Dijkstra pode ser utilizado para definição de um caminho mínimo, logo pode ter serventia para a realização da proposta. Além dele verifiquei que existe outro algoritmo que pode ser utilizado, o Algoritmo de Bellan Ford que também é utilizado para soluções de caminho mínimo. Obviamente existem nuances específicas de cada necessidade, mas como a base é a de encontrar um caminho a partir de uma condição específica, acredito que eles podem ser utilizados ou servirem de base para a proposta.
 
