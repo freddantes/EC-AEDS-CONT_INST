@@ -38,6 +38,8 @@ Para chegar à função que determina o algoritmo como um todo, devemos consider
   <li>Somar matriz: N(linhas) x N(colunas) => N² é o custo visto que serão preenchidas nxn elementos.</li>
   </ul>
 Com isso o custo computacional desse algoritmo seria 3N²  + 2N - 1.<br>
+<h4>Outras Formas</h4>
 Existem outras formas de se executar este programa, inclusive fazendo com um custo computacional mais baixo. Como por exemplo, realizar a soma dos elementos que compõem o caminho, ao fazer as condicionantes para decidir o caminho, com isso o número de instruções seria menor. Outro método que poderia ser utilizado diz respeito a classificar os elementos da matriz, ao criar os elementos aleatórios, dessa forma, fica possível utilizar esses índices para se saber qual seria o caminho adotado passando pelos maiores valores. São implementações mais complexas mas que poderiam ser utilizadas para melhorar a eficácia do algoritmo.<br>
+<h4>Algoritmo Famoso em Literatura</h4>
 Não localizei um algoritmo específico para tal, porém, durante a pesquisei que realizei para saber se existia um algoritmo para resolver o problema proposto, notei que o Algoritmo de Dijkstra pode ser utilizado para definição de um caminho mínimo, logo pode ter serventia para a realização da proposta. Além dele verifiquei que existe outro algoritmo que pode ser utilizado, o Algoritmo de Bellan Ford que também é utilizado para soluções de caminho mínimo. Obviamente existem nuances específicas de cada necessidade, mas como a base é a de encontrar um caminho a partir de uma condição específica, acredito que eles podem ser utilizados ou servirem de base para a proposta.
 
