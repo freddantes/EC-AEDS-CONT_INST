@@ -28,3 +28,15 @@ linha < (n - 1) && (n - 1) > colunha > 0:<br>
 <img src=https://user-images.githubusercontent.com/85570101/126380221-4a918b93-499e-4e73-8cfd-cffc28de7401.png>
 Aqui, será realizada a maior comparação, visto que existe a possibilidade de se andar para a direita, esquerda ou para baixo, logo iremos comparar [i + 1][j], [i][j + 1] e [i][j - 1].
 <h3>Conclusão</h3>
+Realizada a comparação entre os elementos o caminho é traçado considerando os maior valor limítrofe para continuar a sequencia, como foi gerada uma matriz com este caminho e os outros elementos zerados(0), basta realizar a soma dos elementos da matriz que teremos a soma do caminho adotado. Após realizada todas as funções necessárias para chegar ao resultado esperado, obtém-se através de contadores, incrementados durante os processos, a quantidade de vezes em que determinada instrução foi repetida, e é com eles que podemos chegar aos custos computacionais desse algoritmo.
+<h4>Custos Computacionais</h4>
+Para chegar à função que determina o algoritmo como um todo, devemos considerar as etapas, sendo assim foram:<br>
+<ul>
+  <li>Preencher Matriz: N(linhas) x N(colunas) => N² é o custo visto que serão preenchidas nxn elementos.</li>
+  <li>Preencher Matriz Caminho: N(linhas) x N(colunas) => N² é o custo visto que serão preenchidas nxn elementos.</li>
+  <li>Percorre caminho: Condicionantes que variam o N em 2xN, como ele para em [n][n] será de 2N - 1.</li>
+  <li>Somar matriz: N(linhas) x N(colunas) => N² é o custo visto que serão preenchidas nxn elementos.</li>
+  </ul>
+  Com isso o custo computacional desse algoritmo seria 3N²  + 2N - 1.<br>
+  
+
